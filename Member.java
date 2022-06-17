@@ -20,7 +20,7 @@ public class Member{
     private int phoneNumber;
     
     private String emergencyName;
-    private String emergencyPhoneNumber;
+    private int emergencyPhoneNumber;
     
     private int barcode;
     private int agreementNumber;
@@ -41,4 +41,36 @@ public class Member{
     private String[] notes;
     
     private String checkInMessage;
+
+    public Member(String planType, 
+        String firstName, char middleInitial, String lastName, 
+        String address, String city, String state, int zipCode, 
+        Date dateOfBirth, String email, char gender, int phoneNumber, 
+        String emergencyName, int emergencyPhoneNumber, 
+        int cardNumber, int cardSecurityCode, Date cardExpirationDate, 
+        Image picture, Date pictureTakenDate, 
+        Hashtable<String, String> documents, 
+        Date memberSince, Date lastVisit, Date[] checkIns, int[] invoices, String[] notes){
+            this.planType = planType;
+            this.firstName = firstName;
+            this.middleInitial = middleInitial;
+            this.lastName = lastName;
+            this.address = address;
+            this.city = city;
+            this.state = state;
+            this.phoneNumber = phoneNumber;
+            this.emergencyName = emergencyName;
+            this.emergencyPhoneNumber = emergencyPhoneNumber;
+            this.cardNumber = cardNumber;
+            this.cardSecurityCode = cardSecurityCode;
+            this.cardExpirationDate = cardExpirationDate;
+            this.picture = picture;
+            this.pictureTakenDate = pictureTakenDate;
+            this.documents = documents;
+            this.memberSince = memberSince;
+            this.lastVisit = lastVisit;
+            this.checkIns = checkIns;
+            this.invoices = invoices;
+            this.notes = notes;
+    }
 }
